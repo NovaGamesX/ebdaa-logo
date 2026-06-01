@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>إبداع - تصميم شعارات احترافية</title>
+  <title>موقع إبداع - تصميم شعارات احترافية</title>
   <style>
     body{margin:0;padding:0;font-family:Tahoma,Arial,sans-serif;background:radial-gradient(circle at top right,rgba(37,99,235,.28),transparent 32%),radial-gradient(circle at bottom left,rgba(34,197,94,.12),transparent 30%),#07111f;color:#fff;direction:rtl}
     *{box-sizing:border-box}
@@ -40,7 +40,13 @@
     .wa-only-row{display:flex;align-items:center;gap:9px;margin:-5px 0 15px;color:#e2e8f0;font-size:14px;line-height:1.6;cursor:pointer}
     .wa-only-row input{width:auto;margin:0;accent-color:#22c55e;cursor:pointer}
     .wa-msg{display:none;margin:-4px 0 17px;background:rgba(34,197,94,.12);border:1px solid rgba(34,197,94,.32);color:#bbf7d0;border-radius:14px;padding:10px 12px;font-size:13px;line-height:1.7}
-    .send-btn{width:100%;border:0;border-radius:18px;background:linear-gradient(135deg,#22c55e,#16a34a);color:white;font-size:20px;font-weight:bold;padding:16px;cursor:pointer;box-shadow:0 14px 35px rgba(34,197,94,.24)}
+    .send-btn{width:100%;border:0;border-radius:18px;background:linear-gradient(135deg,#22c55e,#16a34a,#22c55e);background-size:200% 200%;color:white;font-size:20px;font-weight:bold;padding:16px;cursor:pointer;box-shadow:0 14px 35px rgba(34,197,94,.24);position:relative;overflow:hidden;animation:pulseBtn 2.4s infinite, moveGradient 4s ease infinite;transition:.25s}
+    .send-btn:hover{transform:translateY(-2px) scale(1.01);box-shadow:0 18px 45px rgba(34,197,94,.36)}
+    .send-btn:active{transform:scale(.98)}
+    .send-btn:before{content:"";position:absolute;top:0;right:-80%;width:55%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-20deg);animation:shine 3s infinite}
+    @keyframes pulseBtn{0%,100%{box-shadow:0 14px 35px rgba(34,197,94,.24)}50%{box-shadow:0 14px 45px rgba(34,197,94,.48)}}
+    @keyframes moveGradient{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+    @keyframes shine{0%{right:-80%}45%,100%{right:130%}}
     .small{text-align:center;color:#94a3b8;font-size:13px;margin-top:14px;line-height:1.8}
     .section-title{text-align:center;margin:35px 0 16px;font-size:28px}
     .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
@@ -60,14 +66,14 @@
 <body>
   <div class="wrap">
     <div class="topbar">
-      <div class="brand"><div class="logo-mark">إ</div><div><div>إبداع</div><div class="brand-sub">لتصميم الشعارات</div></div></div>
+      <div class="brand"><div class="logo-mark">إ</div><div><div>موقع إبداع</div><div class="brand-sub">لتصميم الشعارات</div></div></div>
       <div class="top-actions"><div class="top-note">تصميم شعارات للمتاجر والشركات خلال 24 ساعة</div><button class="share-btn" onclick="shareSite()">🔗 مشاركة الموقع</button></div>
     </div>
 
     <div class="hero">
       <div class="hero-card">
         <div class="tag">✅ معاينة قبل الدفع بعلامة مائية</div>
-        <h1>إبداع لتصميم شعار احترافي يعطي مشروعك ثقة من أول نظرة</h1>
+        <h1>موقع إبداع لتصميم شعار احترافي يعطي مشروعك ثقة من أول نظرة</h1>
         <p class="sub">صمّم شعارًا أنيقًا لمتجرك أو شركتك أو حسابك بسعر بسيط، مع تسليم سريع وملف نهائي بجودة عالية على الإيميل أو الواتساب.</p>
         <div class="price-row"><div class="pill green">25 ريال فقط</div><div class="pill">التسليم خلال 24 ساعة</div><div class="pill">معاينة قبل الدفع</div></div>
         <div class="trust"><div>💧<br/>علامة مائية قبل الدفع</div><div>✉️<br/>استلام نهائي بجودة عالية</div><div>⚡<br/>طلب سريع عبر واتساب</div></div>
@@ -95,7 +101,7 @@
       </div>
     </div>
 
-    <h2 class="section-title">لماذا تطلب من إبداع؟</h2>
+    <h2 class="section-title">لماذا تطلب من موقع إبداع؟</h2>
     <div class="grid">
       <div class="box"><div class="icon">🎯</div><b>تصميم مناسب لهويتك</b><p>نقرأ وصف مشروعك ونصمم شعارًا مناسبًا لطبيعة نشاطك.</p></div>
       <div class="box"><div class="icon">🛡️</div><b>حماية قبل الدفع</b><p>تشاهد المعاينة أولًا بعلامة مائية، وبعد الموافقة تستلم النسخة النهائية.</p></div>
@@ -110,7 +116,7 @@
       <div class="step"><div class="num">4</div><b>تستلم النهائي</b><br/>عبر الإيميل أو واتساب بعد الدفع.</div>
     </div>
 
-    <div class="footer">© إبداع - تصميم شعارات بسيطة واحترافية</div>
+    <div class="footer">© موقع إبداع - تصميم شعارات بسيطة واحترافية</div>
   </div>
 
   <div id="toast" class="toast">✅ تم نسخ رابط الموقع</div>
@@ -154,7 +160,7 @@
     }
 
     function shareSite() {
-      var shareTitle = "إبداع لتصميم الشعارات";
+      var shareTitle = "موقع إبداع لتصميم الشعارات";
       var shareText = "صمم شعار احترافي لمتجرك أو شركتك بـ 25 ريال فقط، والتسليم خلال 24 ساعة.";
       var shareUrl = window.location.href;
       if (navigator.share) {
