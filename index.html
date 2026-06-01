@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>إبداع - تصميم شعارات احترافية</title>
+  <style>
+    body{margin:0;padding:0;font-family:Tahoma,Arial,sans-serif;background:radial-gradient(circle at top right,rgba(37,99,235,.28),transparent 32%),radial-gradient(circle at bottom left,rgba(34,197,94,.12),transparent 30%),#07111f;color:#fff;direction:rtl}
+    *{box-sizing:border-box}
+    .wrap{max-width:1100px;margin:auto;padding:28px 15px 38px}
+    .topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:22px;background:rgba(15,23,42,.55);border:1px solid rgba(148,163,184,.22);border-radius:22px;padding:14px 18px;box-shadow:0 18px 45px rgba(0,0,0,.22)}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:bold;font-size:22px}
+    .logo-mark{width:43px;height:43px;border-radius:15px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#60a5fa,#22c55e);color:#07111f;font-size:24px;box-shadow:0 10px 25px rgba(34,197,94,.25);font-weight:bold}
+    .brand-sub{font-size:12px;color:#94a3b8;font-weight:normal;margin-top:2px}
+    .top-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+    .top-note{color:#cbd5e1;font-size:14px}
+    .share-btn{border:1px solid rgba(148,163,184,.28);background:rgba(2,6,23,.45);color:#fff;border-radius:15px;padding:10px 14px;cursor:pointer;font-family:Tahoma,Arial,sans-serif;font-weight:bold;transition:.2s}
+    .share-btn:hover{background:rgba(96,165,250,.16);transform:translateY(-1px)}
+    .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;align-items:stretch}
+    .hero-card,.order-card,.box{background:linear-gradient(180deg,rgba(15,23,42,.92),rgba(15,23,42,.72));border:1px solid rgba(148,163,184,.22);border-radius:30px;box-shadow:0 24px 70px rgba(0,0,0,.38)}
+    .hero-card{padding:42px 30px;position:relative;overflow:hidden}
+    .hero-card:before{content:"";position:absolute;inset:auto -80px -120px auto;width:260px;height:260px;background:rgba(96,165,250,.18);border-radius:50%;filter:blur(8px)}
+    .tag{display:inline-flex;align-items:center;gap:7px;background:rgba(34,197,94,.13);color:#bbf7d0;border:1px solid rgba(34,197,94,.32);padding:9px 15px;border-radius:999px;font-size:14px;font-weight:bold;margin-bottom:18px}
+    h1{font-size:42px;line-height:1.35;margin:0 0 15px;letter-spacing:-1px}
+    .sub{font-size:18px;line-height:1.9;color:#dbeafe;margin:0 0 24px;max-width:720px}
+    .price-row{display:flex;gap:12px;flex-wrap:wrap;margin:22px 0}
+    .pill{background:#0f172a;border:1px solid rgba(148,163,184,.25);padding:12px 16px;border-radius:18px;color:#e5e7eb;font-weight:bold}
+    .pill.green{background:linear-gradient(135deg,#22c55e,#16a34a);color:white;border:0}
+    .trust{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}
+    .trust div{background:rgba(2,6,23,.45);border:1px solid rgba(148,163,184,.16);border-radius:18px;padding:14px;text-align:center;color:#cbd5e1;font-size:14px;line-height:1.7}
+    .order-card{padding:26px}
+    .order-card h2{text-align:center;margin:0 0 18px;color:#93c5fd;font-size:27px}
+    label{display:block;margin:0 0 8px;color:#f8fafc;font-weight:bold}
+    .field-help{color:#94a3b8;font-size:13px;margin:-3px 0 10px;line-height:1.7}
+    textarea,input{width:100%;margin:0 0 17px;border-radius:17px;border:1px solid #475569;background:rgba(2,6,23,.84);color:white;padding:14px;font-size:15px;font-family:Tahoma,Arial,sans-serif;outline:none}
+    textarea:focus,input:focus{border-color:#60a5fa;box-shadow:0 0 0 3px rgba(96,165,250,.15)}
+    textarea{height:145px;resize:vertical;line-height:1.7}
+    input[type="file"]{color:#cbd5e1;cursor:pointer}
+    input:disabled{opacity:.55;cursor:not-allowed}
+    .wa-only-row{display:flex;align-items:center;gap:9px;margin:-5px 0 15px;color:#e2e8f0;font-size:14px;line-height:1.6;cursor:pointer}
+    .wa-only-row input{width:auto;margin:0;accent-color:#22c55e;cursor:pointer}
+    .wa-msg{display:none;margin:-4px 0 17px;background:rgba(34,197,94,.12);border:1px solid rgba(34,197,94,.32);color:#bbf7d0;border-radius:14px;padding:10px 12px;font-size:13px;line-height:1.7}
+    .send-btn{width:100%;border:0;border-radius:18px;background:linear-gradient(135deg,#22c55e,#16a34a);color:white;font-size:20px;font-weight:bold;padding:16px;cursor:pointer;box-shadow:0 14px 35px rgba(34,197,94,.24)}
+    .small{text-align:center;color:#94a3b8;font-size:13px;margin-top:14px;line-height:1.8}
+    .section-title{text-align:center;margin:35px 0 16px;font-size:28px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+    .box{padding:22px;text-align:center;line-height:1.8}
+    .icon{font-size:31px;margin-bottom:8px}
+    .box b{font-size:18px}
+    .box p{color:#94a3b8;margin:8px 0 0;font-size:14px}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .step{background:rgba(15,23,42,.72);border:1px solid rgba(148,163,184,.2);border-radius:22px;padding:20px;text-align:center;line-height:1.8}
+    .num{width:38px;height:38px;margin:0 auto 10px;border-radius:14px;background:linear-gradient(135deg,#60a5fa,#2563eb);display:flex;align-items:center;justify-content:center;font-weight:bold}
+    .footer{text-align:center;color:#64748b;font-size:13px;margin-top:30px}
+    .toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);background:#16a34a;color:#fff;padding:12px 18px;border-radius:999px;box-shadow:0 14px 35px rgba(0,0,0,.35);display:none;z-index:9999;font-weight:bold}
+    @media(max-width:850px){.hero{grid-template-columns:1fr}h1{font-size:33px}.trust,.grid{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.topbar{align-items:flex-start;flex-direction:column}.top-actions{width:100%;justify-content:space-between}}
+    @media(max-width:520px){.wrap{padding:18px 11px 30px}.hero-card,.order-card{border-radius:23px;padding:24px 15px}h1{font-size:28px}.sub{font-size:16px}.steps{grid-template-columns:1fr}.top-actions{flex-direction:column;align-items:stretch}.share-btn{width:100%}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand"><div class="logo-mark">إ</div><div><div>إبداع</div><div class="brand-sub">لتصميم الشعارات</div></div></div>
+      <div class="top-actions"><div class="top-note">تصميم شعارات للمتاجر والشركات خلال 24 ساعة</div><button class="share-btn" onclick="shareSite()">🔗 مشاركة الموقع</button></div>
+    </div>
+
+    <div class="hero">
+      <div class="hero-card">
+        <div class="tag">✅ معاينة قبل الدفع بعلامة مائية</div>
+        <h1>إبداع لتصميم شعار احترافي يعطي مشروعك ثقة من أول نظرة</h1>
+        <p class="sub">صمّم شعارًا أنيقًا لمتجرك أو شركتك أو حسابك بسعر بسيط، مع تسليم سريع وملف نهائي بجودة عالية على الإيميل أو الواتساب.</p>
+        <div class="price-row"><div class="pill green">25 ريال فقط</div><div class="pill">التسليم خلال 24 ساعة</div><div class="pill">معاينة قبل الدفع</div></div>
+        <div class="trust"><div>💧<br/>علامة مائية قبل الدفع</div><div>✉️<br/>استلام نهائي بجودة عالية</div><div>⚡<br/>طلب سريع عبر واتساب</div></div>
+      </div>
+
+      <div class="order-card">
+        <h2>اطلب شعارك الآن</h2>
+        <label for="details">تفاصيل الشعار المطلوب:</label>
+        <textarea id="details" placeholder="مثال: أبغى شعار لمتجر كمبيوتر، اللون أزرق وأسود، الاسم إبداع، وأبغاه فخم وبسيط..."></textarea>
+        <label for="image">صورة مرجعية أو شعار قديم اختياري:</label>
+        <input id="image" type="file" accept="image/*"/>
+
+        <label for="email">الإيميل لاستلام الشعار النهائي (اختياري):</label>
+        <div class="field-help">للحصول على الشعار بجودته الأصلية.</div>
+        <input id="email" type="email" placeholder="example@gmail.com"/>
+
+        <label class="wa-only-row" for="whatsappOnly">
+          <input id="whatsappOnly" type="checkbox" onchange="toggleWhatsappOnly()"/>
+          <span>أرغب باستلام الشعار عبر واتساب فقط</span>
+        </label>
+        <div id="waMsg" class="wa-msg">✅ سيتم إرسال الشعار النهائي عبر واتساب بدلاً من البريد الإلكتروني.</div>
+
+        <button class="send-btn" onclick="sendOrder()">إرسال الطلب عبر واتساب</button>
+        <div class="small">إذا عندك صورة مرجعية، أرسلها في الواتساب بعد إرسال الطلب.</div>
+      </div>
+    </div>
+
+    <h2 class="section-title">لماذا تطلب من إبداع؟</h2>
+    <div class="grid">
+      <div class="box"><div class="icon">🎯</div><b>تصميم مناسب لهويتك</b><p>نقرأ وصف مشروعك ونصمم شعارًا مناسبًا لطبيعة نشاطك.</p></div>
+      <div class="box"><div class="icon">🛡️</div><b>حماية قبل الدفع</b><p>تشاهد المعاينة أولًا بعلامة مائية، وبعد الموافقة تستلم النسخة النهائية.</p></div>
+      <div class="box"><div class="icon">📩</div><b>استلام مرن</b><p>يمكنك استلام الشعار عبر الإيميل أو عبر واتساب حسب رغبتك.</p></div>
+    </div>
+
+    <h2 class="section-title">طريقة الطلب</h2>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><b>اكتب التفاصيل</b><br/>اسم المشروع والألوان والفكرة.</div>
+      <div class="step"><div class="num">2</div><b>أرسل الطلب</b><br/>يوصلنا مباشرة على واتساب.</div>
+      <div class="step"><div class="num">3</div><b>تشاهد المعاينة</b><br/>بعلامة مائية للحماية.</div>
+      <div class="step"><div class="num">4</div><b>تستلم النهائي</b><br/>عبر الإيميل أو واتساب بعد الدفع.</div>
+    </div>
+
+    <div class="footer">© إبداع - تصميم شعارات بسيطة واحترافية</div>
+  </div>
+
+  <div id="toast" class="toast">✅ تم نسخ رابط الموقع</div>
+
+  <script>
+    function toggleWhatsappOnly() {
+      var check = document.getElementById("whatsappOnly");
+      var email = document.getElementById("email");
+      var msg = document.getElementById("waMsg");
+      if (check.checked) {
+        email.value = "استلام عبر واتساب فقط";
+        email.disabled = true;
+        msg.style.display = "block";
+      } else {
+        email.value = "";
+        email.disabled = false;
+        msg.style.display = "none";
+      }
+    }
+
+    function sendOrder() {
+      var phone = "966550776118";
+      var details = document.getElementById("details").value.trim();
+      var emailInput = document.getElementById("email");
+      var email = emailInput.value.trim();
+      var whatsappOnly = document.getElementById("whatsappOnly").checked;
+      var imageInput = document.getElementById("image");
+      var hasImage = imageInput && imageInput.value ? "نعم، عندي صورة مرجعية وسأرسلها في الواتساب." : "لا توجد صورة مرجعية.";
+      var deliveryMethod = whatsappOnly ? "استلام عبر واتساب فقط" : (email ? "استلام عبر الإيميل: " + email : "لم يتم إدخال إيميل، سيتم التواصل عبر واتساب.");
+
+      if (!details) { alert("اكتب تفاصيل الشعار أولاً"); return; }
+
+      var message = "طلب تصميم شعار جديد\n\n" + "تفاصيل الشعار:\n" + details + "\n\n" + "طريقة الاستلام:\n" + deliveryMethod + "\n\n" + "الصورة المرجعية:\n" + hasImage + "\n\n" + "السعر: 25 ريال\n" + "التسليم: خلال 24 ساعة";
+      window.open("https://wa.me/" + phone + "?text=" + encodeURIComponent(message), "_blank");
+    }
+
+    function showToast() {
+      var toast = document.getElementById("toast");
+      toast.style.display = "block";
+      setTimeout(function(){ toast.style.display = "none"; }, 1800);
+    }
+
+    function shareSite() {
+      var shareTitle = "إبداع لتصميم الشعارات";
+      var shareText = "صمم شعار احترافي لمتجرك أو شركتك بـ 25 ريال فقط، والتسليم خلال 24 ساعة.";
+      var shareUrl = window.location.href;
+      if (navigator.share) {
+        navigator.share({title: shareTitle, text: shareText, url: shareUrl});
+      } else {
+        var tempInput = document.createElement("input");
+        tempInput.value = shareUrl;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand("copy");
+        document.body.removeChild(tempInput);
+        showToast();
+      }
+    }
+  </script>
+</body>
+</html>
