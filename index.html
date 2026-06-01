@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>موقع إبداع - تصميم شعارات احترافية</title>
   <style>
-    body{margin:0;padding:0;font-family:Tahoma,Arial,sans-serif;background:radial-gradient(circle at top right,rgba(37,99,235,.28),transparent 32%),radial-gradient(circle at bottom left,rgba(34,197,94,.12),transparent 30%),#07111f;color:#fff;direction:rtl}
+body{margin:0;padding:0;font-family:Tahoma,Arial,sans-serif;background:radial-gradient(circle at top right,rgba(37,99,235,.28),transparent 32%),radial-gradient(circle at bottom left,rgba(34,197,94,.12),transparent 30%),#07111f;color:#fff;direction:rtl}
     *{box-sizing:border-box}
     .wrap{max-width:1100px;margin:auto;padding:28px 15px 38px}
     .topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:22px;background:rgba(15,23,42,.55);border:1px solid rgba(148,163,184,.22);border-radius:22px;padding:14px 18px;box-shadow:0 18px 45px rgba(0,0,0,.22)}
@@ -58,71 +58,72 @@
     .step{background:rgba(15,23,42,.72);border:1px solid rgba(148,163,184,.2);border-radius:22px;padding:20px;text-align:center;line-height:1.8}
     .num{width:38px;height:38px;margin:0 auto 10px;border-radius:14px;background:linear-gradient(135deg,#60a5fa,#2563eb);display:flex;align-items:center;justify-content:center;font-weight:bold}
     .footer{text-align:center;color:#64748b;font-size:13px;margin-top:30px}
+    .hidden-section{display:none}
     .toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);background:#16a34a;color:#fff;padding:12px 18px;border-radius:999px;box-shadow:0 14px 35px rgba(0,0,0,.35);display:none;z-index:9999;font-weight:bold}
     @media(max-width:850px){.hero{grid-template-columns:1fr}h1{font-size:33px}.trust,.grid{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.topbar{align-items:flex-start;flex-direction:column}.top-actions{width:100%;justify-content:space-between}}
     @media(max-width:520px){.wrap{padding:18px 11px 30px}.hero-card,.order-card{border-radius:23px;padding:24px 15px}h1{font-size:28px}.sub{font-size:16px}.steps{grid-template-columns:1fr}.top-actions{flex-direction:column;align-items:stretch}.share-btn{width:100%}}
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="topbar">
-      <div class="brand"><div class="logo-mark">إ</div><div><div>موقع إبداع</div><div class="brand-sub">لتصميم الشعارات</div></div></div>
-      <div class="top-actions"><div class="top-note">تصميم شعارات للمتاجر والشركات خلال 24 ساعة</div><button class="share-btn" onclick="shareSite()">🔗 مشاركة الموقع</button></div>
+<div class='wrap'>
+    <div class='topbar'>
+      <div class='brand'><div class='logo-mark'>إ</div><div><div>إبداع</div><div class='brand-sub'>موقع إبداع لتصميم الشعارات</div></div></div>
+      <div class='top-actions'><div class='top-note'>موقع إبداع لتصميم شعارات المتاجر والشركات خلال 24 ساعة</div><button class='share-btn' onclick='shareSite()'>🔗 مشاركة الموقع</button></div>
     </div>
 
-    <div class="hero">
-      <div class="hero-card">
-        <div class="tag">✅ معاينة قبل الدفع بعلامة مائية</div>
-        <h1>موقع إبداع لتصميم شعار احترافي يعطي مشروعك ثقة من أول نظرة</h1>
-        <p class="sub">صمّم شعارًا أنيقًا لمتجرك أو شركتك أو حسابك بسعر بسيط، مع تسليم سريع وملف نهائي بجودة عالية على الإيميل أو الواتساب.</p>
-        <div class="price-row"><div class="pill green">25 ريال فقط</div><div class="pill">التسليم خلال 24 ساعة</div><div class="pill">معاينة قبل الدفع</div></div>
-        <div class="trust"><div>💧<br/>علامة مائية قبل الدفع</div><div>✉️<br/>استلام نهائي بجودة عالية</div><div>⚡<br/>طلب سريع عبر واتساب</div></div>
+    <div class='hero'>
+      <div class='hero-card'>
+        <div class='tag'>✅ معاينة قبل الدفع بعلامة مائية</div>
+        <h1>موقع إبداع لتصميم شعارات احترافية للمتاجر والشركات</h1>
+        <p class='sub'>في موقع إبداع نصمّم لك شعارًا أنيقًا لمتجرك أو شركتك أو حسابك بسعر بسيط، مع تسليم سريع وملف نهائي بجودة عالية على الإيميل أو الواتساب.</p>
+        <div class='price-row'><div class='pill green'>25 ريال فقط</div><div class='pill'>التسليم خلال 24 ساعة</div><div class='pill'>معاينة قبل الدفع</div></div>
+        <div class='trust'><div>💧<br/>علامة مائية قبل الدفع</div><div>✉️<br/>استلام نهائي بجودة عالية</div><div>⚡<br/>طلب سريع عبر واتساب</div></div>
       </div>
 
-      <div class="order-card">
-        <h2>اطلب شعارك الآن</h2>
-        <label for="details">تفاصيل الشعار المطلوب:</label>
-        <textarea id="details" placeholder="مثال: أبغى شعار لمتجر كمبيوتر، اللون أزرق وأسود، الاسم إبداع، وأبغاه فخم وبسيط..."></textarea>
-        <label for="image">صورة مرجعية أو شعار قديم اختياري:</label>
-        <input id="image" type="file" accept="image/*"/>
+      <div class='order-card'>
+        <h2>اطلب شعارك من موقع إبداع</h2>
+        <label for='details'>تفاصيل الشعار المطلوب:</label>
+        <textarea id='details' placeholder='مثال: أبغى شعار لمتجر كمبيوتر، اللون أزرق وأسود، الاسم إبداع، وأبغاه فخم وبسيط...'></textarea>
+        <label for='image'>صورة مرجعية أو شعار قديم اختياري:</label>
+        <input accept='image/*' id='image' type='file'/>
 
-        <label for="email">الإيميل لاستلام الشعار النهائي (اختياري):</label>
-        <div class="field-help">للحصول على الشعار بجودته الأصلية.</div>
-        <input id="email" type="email" placeholder="example@gmail.com"/>
+        <label for='email'>الإيميل لاستلام الشعار النهائي (اختياري):</label>
+        <div class='field-help'>للحصول على الشعار بجودته الأصلية.</div>
+        <input id='email' placeholder='example@gmail.com' type='email'/>
 
-        <label class="wa-only-row" for="whatsappOnly">
-          <input id="whatsappOnly" type="checkbox" onchange="toggleWhatsappOnly()"/>
+        <label class='wa-only-row' for='whatsappOnly'>
+          <input id='whatsappOnly' onchange='toggleWhatsappOnly()' type='checkbox'/>
           <span>أرغب باستلام الشعار عبر واتساب فقط</span>
         </label>
-        <div id="waMsg" class="wa-msg">✅ سيتم إرسال الشعار النهائي عبر واتساب بدلاً من البريد الإلكتروني.</div>
+        <div class='wa-msg' id='waMsg'>✅ سيتم إرسال الشعار النهائي عبر واتساب بدلاً من البريد الإلكتروني.</div>
 
-        <button class="send-btn" onclick="sendOrder()">إرسال الطلب عبر واتساب</button>
-        <div class="small">إذا عندك صورة مرجعية، أرسلها في الواتساب بعد إرسال الطلب.</div>
+        <button class='send-btn' onclick='sendOrder()'>إرسال الطلب عبر واتساب</button>
+        <div class='small'>إذا عندك صورة مرجعية، أرسلها في الواتساب بعد إرسال الطلب.</div>
       </div>
     </div>
 
-    <h2 class="section-title">لماذا تطلب من موقع إبداع؟</h2>
-    <div class="grid">
-      <div class="box"><div class="icon">🎯</div><b>تصميم مناسب لهويتك</b><p>نقرأ وصف مشروعك ونصمم شعارًا مناسبًا لطبيعة نشاطك.</p></div>
-      <div class="box"><div class="icon">🛡️</div><b>حماية قبل الدفع</b><p>تشاهد المعاينة أولًا بعلامة مائية، وبعد الموافقة تستلم النسخة النهائية.</p></div>
-      <div class="box"><div class="icon">📩</div><b>استلام مرن</b><p>يمكنك استلام الشعار عبر الإيميل أو عبر واتساب حسب رغبتك.</p></div>
+    <h2 class='section-title'>لماذا تختار موقع إبداع؟</h2>
+    <div class='grid'>
+      <div class='box'><div class='icon'>🎯</div><b>تصميم مناسب لهويتك</b><p>في موقع إبداع نقرأ وصف مشروعك ونصمم شعارًا مناسبًا لطبيعة نشاطك.</p></div>
+      <div class='box'><div class='icon'>🛡&#65039;</div><b>حماية قبل الدفع</b><p>تشاهد المعاينة أولًا بعلامة مائية، وبعد الموافقة تستلم النسخة النهائية.</p></div>
+      <div class='box'><div class='icon'>📩</div><b>استلام مرن</b><p>يمكنك استلام الشعار عبر الإيميل أو عبر واتساب حسب رغبتك.</p></div>
     </div>
 
-    <h2 class="section-title">طريقة الطلب</h2>
-    <div class="steps">
-      <div class="step"><div class="num">1</div><b>اكتب التفاصيل</b><br/>اسم المشروع والألوان والفكرة.</div>
-      <div class="step"><div class="num">2</div><b>أرسل الطلب</b><br/>يوصلنا مباشرة على واتساب.</div>
-      <div class="step"><div class="num">3</div><b>تشاهد المعاينة</b><br/>بعلامة مائية للحماية.</div>
-      <div class="step"><div class="num">4</div><b>تستلم النهائي</b><br/>عبر الإيميل أو واتساب بعد الدفع.</div>
+    <h2 class='section-title'>طريقة الطلب من موقع إبداع</h2>
+    <div class='steps'>
+      <div class='step'><div class='num'>1</div><b>اكتب التفاصيل</b><br/>اسم المشروع والألوان والفكرة.</div>
+      <div class='step'><div class='num'>2</div><b>أرسل الطلب</b><br/>يوصلنا مباشرة على واتساب.</div>
+      <div class='step'><div class='num'>3</div><b>تشاهد المعاينة</b><br/>بعلامة مائية للحماية.</div>
+      <div class='step'><div class='num'>4</div><b>تستلم النهائي</b><br/>عبر الإيميل أو واتساب بعد الدفع.</div>
     </div>
 
-    <div class="footer">© موقع إبداع - تصميم شعارات بسيطة واحترافية</div>
+    <div class='footer'>© موقع إبداع - تصميم شعارات احترافية للمتاجر والشركات</div>
   </div>
 
-  <div id="toast" class="toast">✅ تم نسخ رابط الموقع</div>
+  <div class='toast' id='toast'>✅ تم نسخ رابط الموقع</div>
 
   <script>
-    function toggleWhatsappOnly() {
+function toggleWhatsappOnly() {
       var check = document.getElementById("whatsappOnly");
       var email = document.getElementById("email");
       var msg = document.getElementById("waMsg");
@@ -149,7 +150,7 @@
 
       if (!details) { alert("اكتب تفاصيل الشعار أولاً"); return; }
 
-      var message = "طلب تصميم شعار جديد\n\n" + "تفاصيل الشعار:\n" + details + "\n\n" + "طريقة الاستلام:\n" + deliveryMethod + "\n\n" + "الصورة المرجعية:\n" + hasImage + "\n\n" + "السعر: 25 ريال\n" + "التسليم: خلال 24 ساعة";
+      var message = "طلب تصميم شعار جديد من موقع إبداع\n\n" + "تفاصيل الشعار:\n" + details + "\n\n" + "طريقة الاستلام:\n" + deliveryMethod + "\n\n" + "الصورة المرجعية:\n" + hasImage + "\n\n" + "السعر: 25 ريال\n" + "التسليم: خلال 24 ساعة";
       window.open("https://wa.me/" + phone + "?text=" + encodeURIComponent(message), "_blank");
     }
 
@@ -161,7 +162,7 @@
 
     function shareSite() {
       var shareTitle = "موقع إبداع لتصميم الشعارات";
-      var shareText = "صمم شعار احترافي لمتجرك أو شركتك بـ 25 ريال فقط، والتسليم خلال 24 ساعة.";
+      var shareText = "موقع إبداع: صمم شعار احترافي لمتجرك أو شركتك بـ 25 ريال فقط، والتسليم خلال 24 ساعة.";
       var shareUrl = window.location.href;
       if (navigator.share) {
         navigator.share({title: shareTitle, text: shareText, url: shareUrl});
