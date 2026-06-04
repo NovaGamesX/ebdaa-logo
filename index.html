@@ -150,7 +150,7 @@ function toggleWhatsappOnly() {
       var email = document.getElementById("email");
       var msg = document.getElementById("waMsg");
       if (check.checked) {
-        email.value = "التواصل عبر الهاتف عند الحاجة";
+        email.value = "";
         email.disabled = true;
         msg.style.display = "block";
       } else {
@@ -168,11 +168,11 @@ function toggleWhatsappOnly() {
       var whatsappOnly = document.getElementById("whatsappOnly").checked;
       var imageInput = document.getElementById("image");
       var hasImage = imageInput && imageInput.value ? "نعم، عندي صورة مرجعية وسأرسلها في الواتساب." : "لا توجد صورة مرجعية.";
-      var deliveryMethod = whatsappOnly ? "التواصل عبر الهاتف عند الحاجة" : (email ? "استلام عبر الإيميل: " + email : "لم يتم إدخال إيميل، سيتم التواصل لتأكيد طريقة الاستلام.");
+      var deliveryMethod = email ? email : "لم يتم إدخال بريد إلكتروني";
 
       if (!details) { alert("اكتب تفاصيل الشعار أولاً"); return; }
 
-      var message = "طلب تصميم شعار جديد\n\n" + "تفاصيل الشعار:\n" + details + "\n\n" + "طريقة الاستلام:\n" + deliveryMethod + "\n\n" + "الصورة المرجعية:\n" + hasImage + "\n\n" + "السعر: 25 ريال\n" + "التسليم المتوقع: خلال 24 ساعة";
+      var message = "طلب تصميم شعار جديد\n\n" + "تفاصيل الشعار:\n" + details + "\n\n" + "البريد الإلكتروني:\n" + deliveryMethod + "\n\n" + "الصورة المرجعية:\n" + hasImage + "\n\n" + "السعر: 25 ريال";
       window.open("https://wa.me/" + phone + "?text=" + encodeURIComponent(message), "_blank");
     }
 
