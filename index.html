@@ -70,6 +70,12 @@ body{margin:0;padding:0;font-family:Tahoma,Arial,sans-serif;background:radial-gr
     .hero-logo-big img{width:100%;height:100%;object-fit:cover;display:block}
     @media(max-width:520px){.logo-img-box{width:48px;height:48px;border-radius:16px}.hero-logo-big{width:64px;height:64px;border-radius:20px}}
 
+  
+    .policy-links{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+    .policy-links a{color:#bfdbfe;text-decoration:none;border:1px solid rgba(147,197,253,.25);padding:10px 13px;border-radius:14px;background:rgba(15,23,42,.55)}
+    .policy-section{margin-top:18px;background:rgba(15,23,42,.65);border:1px solid rgba(148,163,184,.18);border-radius:22px;padding:22px;line-height:1.9;color:#cbd5e1}
+    .policy-section h3{margin:0 0 8px;color:#fff;font-size:20px}
+
   </style>
 </head>
 <body>
@@ -83,9 +89,9 @@ body{margin:0;padding:0;font-family:Tahoma,Arial,sans-serif;background:radial-gr
       <div class='hero-card'>
         <div class='tag'>✅ معاينة قبل الدفع بعلامة مائية</div>
         <h1>موقع إبداع لتصميم شعارات احترافية للمتاجر والشركات</h1>
-        <p class='sub'>في موقع إبداع نصمّم لك شعارًا أنيقًا لمتجرك أو شركتك أو حسابك بسعر بسيط، مع تسليم سريع وملف نهائي بجودة عالية على الإيميل أو الواتساب.</p>
+        <p class='sub'>في موقع إبداع نصمّم لك شعارًا أنيقًا لمتجرك أو شركتك أو حسابك بسعر بسيط، مع تسليم سريع وملف نهائي بجودة عالية بعد الموافقة على التصميم.</p>
         <div class='price-row'><div class='pill green'>25 ريال فقط</div><div class='pill'>التسليم خلال 24 ساعة</div><div class='pill'>معاينة قبل الدفع</div></div>
-        <div class='trust'><div>💧<br/>علامة مائية قبل الدفع</div><div>✉️<br/>استلام نهائي بجودة عالية</div><div>⚡<br/>طلب سريع عبر واتساب</div></div>
+        <div class='trust'><div>💧<br/>علامة مائية قبل الدفع</div><div>✉️<br/>استلام نهائي بجودة عالية</div><div>⚡<br/>نموذج طلب واضح</div></div>
       </div>
 
       <div class='order-card'>
@@ -101,29 +107,52 @@ body{margin:0;padding:0;font-family:Tahoma,Arial,sans-serif;background:radial-gr
 
         <label class='wa-only-row' for='whatsappOnly'>
           <input id='whatsappOnly' onchange='toggleWhatsappOnly()' type='checkbox'/>
-          <span>أرغب باستلام الشعار عبر واتساب فقط</span>
+          <span>لا أملك إيميل وأرغب بالتواصل لاحقًا</span>
         </label>
-        <div class='wa-msg' id='waMsg'>✅ سيتم إرسال الشعار النهائي عبر واتساب بدلاً من البريد الإلكتروني.</div>
+        <div class='wa-msg' id='waMsg'>✅ سنستخدم وسيلة التواصل المتاحة لإكمال الطلب.</div>
 
-        <button class='send-btn' onclick='sendOrder()'>إرسال الطلب عبر واتساب</button>
-        <div class='small'>إذا عندك صورة مرجعية، أرسلها في الواتساب بعد إرسال الطلب.</div>
+        <button class='send-btn' onclick='sendOrder()'>إرسال الطلب</button>
+        <div class='small'>بعد إرسال الطلب سيتم فتح المحادثة لإكمال التفاصيل إن لزم.</div>
       </div>
     </div>
 
-    <h2 class='section-title'>لماذا تختار موقع إبداع؟</h2>
+    <h2 class='section-title'>معلومات الخدمة</h2>
     <div class='grid'>
-      <div class='box'><div class='icon'>🎯</div><b>تصميم مناسب لهويتك</b><p>في موقع إبداع نقرأ وصف مشروعك ونصمم شعارًا مناسبًا لطبيعة نشاطك.</p></div>
-      <div class='box'><div class='icon'>🛡&#65039;</div><b>حماية قبل الدفع</b><p>تشاهد المعاينة أولًا بعلامة مائية، وبعد الموافقة تستلم النسخة النهائية.</p></div>
-      <div class='box'><div class='icon'>📩</div><b>استلام مرن</b><p>يمكنك استلام الشعار عبر الإيميل أو عبر واتساب حسب رغبتك.</p></div>
+      <div class='box'><div class='icon'>🎯</div><b>تصميم مناسب لهويتك</b><p>خدمة تصميم شعارات للمتاجر والشركات والحسابات التجارية.</p></div>
+      <div class='box'><div class='icon'>🛡&#65039;</div><b>معاينة قبل الدفع</b><p>تشاهد التصميم أولًا بعلامة مائية، وبعد الموافقة تستلم الملف النهائي.</p></div>
+      <div class='box'><div class='icon'>📩</div><b>استلام واضح</b><p>يمكنك استلام الشعار النهائي بجودة عالية بعد الموافقة.</p></div>
     </div>
 
-    <h2 class='section-title'>طريقة الطلب من موقع إبداع</h2>
+    <h2 class='section-title'>طريقة طلب التصميم</h2>
     <div class='steps'>
-      <div class='step'><div class='num'>1</div><b>اكتب التفاصيل</b><br/>اسم المشروع والألوان والفكرة.</div>
-      <div class='step'><div class='num'>2</div><b>أرسل الطلب</b><br/>يوصلنا مباشرة على واتساب.</div>
+      <div class='step'><div class='num'>1</div><b>اكتب وصف الشعار</b><br/>اسم المشروع والألوان والفكرة.</div>
+      <div class='step'><div class='num'>2</div><b>أرسل النموذج</b><br/>يتم فتح نموذج التواصل لإكمال الطلب.</div>
       <div class='step'><div class='num'>3</div><b>تشاهد المعاينة</b><br/>بعلامة مائية للحماية.</div>
-      <div class='step'><div class='num'>4</div><b>تستلم النهائي</b><br/>عبر الإيميل أو واتساب بعد الدفع.</div>
+      <div class='step'><div class='num'>4</div><b>استلم الملف</b><br/>بعد الموافقة وإكمال الطلب.</div>
     </div>
+
+
+    <div class='policy-links'>
+      <a href='#privacy'>سياسة الخصوصية</a>
+      <a href='#terms'>شروط الخدمة</a>
+      <a href='#contact'>التواصل</a>
+    </div>
+
+    <div class='policy-section' id='privacy'>
+      <h3>سياسة الخصوصية</h3>
+      <p>نستخدم المعلومات التي يرسلها العميل مثل تفاصيل الشعار والبريد الإلكتروني لغرض تنفيذ طلب تصميم الشعار فقط. لا يتم بيع بيانات العملاء أو مشاركتها مع جهات خارجية.</p>
+    </div>
+
+    <div class='policy-section' id='terms'>
+      <h3>شروط الخدمة</h3>
+      <p>الخدمة مخصصة لتصميم الشعارات فقط. يتم إرسال معاينة أولية بعلامة مائية، وبعد موافقة العميل وإكمال الطلب يتم تسليم الملف النهائي بجودة عالية. السعر الأساسي للخدمة 25 ريال وقد تختلف التفاصيل حسب طلب العميل.</p>
+    </div>
+
+    <div class='policy-section' id='contact'>
+      <h3>التواصل</h3>
+      <p>يمكن للعميل إرسال طلب التصميم من خلال النموذج الموجود في الصفحة. بعد إرسال الطلب يتم فتح وسيلة التواصل لإكمال تفاصيل الطلب وتسليم التصميم بعد الموافقة.</p>
+    </div>
+
 
     <div class='footer'>© موقع إبداع - تصميم شعارات احترافية للمتاجر والشركات</div>
   </div>
@@ -136,7 +165,7 @@ function toggleWhatsappOnly() {
       var email = document.getElementById("email");
       var msg = document.getElementById("waMsg");
       if (check.checked) {
-        email.value = "استلام عبر واتساب فقط";
+        email.value = "التواصل لاحقًا بدون إيميل";
         email.disabled = true;
         msg.style.display = "block";
       } else {
@@ -154,11 +183,11 @@ function toggleWhatsappOnly() {
       var whatsappOnly = document.getElementById("whatsappOnly").checked;
       var imageInput = document.getElementById("image");
       var hasImage = imageInput && imageInput.value ? "نعم، عندي صورة مرجعية وسأرسلها في الواتساب." : "لا توجد صورة مرجعية.";
-      var deliveryMethod = whatsappOnly ? "استلام عبر واتساب فقط" : (email ? "استلام عبر الإيميل: " + email : "لم يتم إدخال إيميل، سيتم التواصل عبر واتساب.");
+      var deliveryMethod = whatsappOnly ? "التواصل لاحقًا بدون إيميل" : (email ? "استلام عبر الإيميل: " + email : "لم يتم إدخال إيميل، سيتم التواصل عبر واتساب.");
 
       if (!details) { alert("اكتب تفاصيل الشعار أولاً"); return; }
 
-      var message = "طلب تصميم شعار جديد من موقع إبداع\n\n" + "تفاصيل الشعار:\n" + details + "\n\n" + "طريقة الاستلام:\n" + deliveryMethod + "\n\n" + "الصورة المرجعية:\n" + hasImage + "\n\n" + "السعر: 25 ريال\n" + "التسليم: خلال 24 ساعة";
+      var message = "طلب تصميم شعار جديد\n\n" + "تفاصيل الشعار:\n" + details + "\n\n" + "طريقة الاستلام:\n" + deliveryMethod + "\n\n" + "الصورة المرجعية:\n" + hasImage + "\n\n" + "سعر الخدمة: 25 ريال\n" + "مدة التسليم المتوقعة: خلال 24 ساعة";
       window.open("https://wa.me/" + phone + "?text=" + encodeURIComponent(message), "_blank");
     }
 
@@ -170,7 +199,7 @@ function toggleWhatsappOnly() {
 
     function shareSite() {
       var shareTitle = "موقع إبداع لتصميم الشعارات";
-      var shareText = "موقع إبداع: صمم شعار احترافي لمتجرك أو شركتك بـ 25 ريال فقط، والتسليم خلال 24 ساعة.";
+      var shareText = "موقع إبداع: خدمة تصميم شعارات احترافية للمتاجر والشركات بسعر 25 ريال.";
       var shareUrl = window.location.href;
       if (navigator.share) {
         navigator.share({title: shareTitle, text: shareText, url: shareUrl});
